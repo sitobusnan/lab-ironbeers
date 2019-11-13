@@ -1,6 +1,6 @@
-<div class ="random-beer-container">
-   {{#each beers}} 
-    <div>
+<div class="random-beer-container">
+  {{#each beers}}
+  <div class="rdm-img">
     <img src="{{this.image_url}}" alt="">
   </div>
   <div>
@@ -8,7 +8,7 @@
     <h2>{{this.tagline}}</h2>
     <p>{{this.desctription}}</p>
     <h3>Food pairing</h3>
-    {{#each this.food_pairing}} 
+    {{#each this.food_pairing}}
     <li>{{this}}</li>
     {{/each}}
     <p>Brewers Tips: {{this.brewers_tips}}</p>
@@ -16,4 +16,3 @@
   {{/each}}
 
 </div>
-
